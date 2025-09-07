@@ -78,7 +78,7 @@ export default function Home() {
               <div className="h-48 bg-gradient-to-br from-pink-500/20 to-orange-500/20 relative overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <img 
-                    src="/images/temple-diploma.jpg" 
+                    src="/images/temple-diploma.png" 
                     alt="Temple University" 
                     className="w-full h-full object-cover opacity-40"
                   />

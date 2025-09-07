@@ -12,7 +12,7 @@ export const education = {
     "Advanced Brand Strategy",
     "Advertising Sales"
   ],
-  diplomaImage: "/images/temple-diploma.jpg",
+  diplomaImage: "/images/temple-diploma.png",
   diplomaDetails: {
     fullName: "George David Lock",
     conferredOn: "May 7, 2025",

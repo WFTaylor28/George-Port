@@ -182,7 +182,7 @@ export default function AboutPage() {
                 <div className="relative max-w-md mx-auto">
                   <div className="absolute -inset-2 bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-lg blur-md"></div>
                   <img 
-                    src="/images/temple-diploma.jpg" 
+                    src="/images/temple-diploma.png" 
                     alt="Temple University Diploma" 
                     className="relative z-10 w-full h-auto rounded-lg border-2 border-white/20"
                   />
