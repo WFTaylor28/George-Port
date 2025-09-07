@@ -1,13 +1,18 @@
-# George Lock Portfolio
+# George Lock - Social Media & Advertising Expert
 
-A modern, responsive portfolio website for George Lock, a social media and advertising expert.
+![Portfolio Preview](public/images/george-graduation.jpg)
 
-## Features
+## Professional Portfolio Website
 
-- Modern UI with gradient styling and glassmorphism effects
-- Responsive design for all device sizes
-- Sections for About, Work Experience, Education, Social Media Portfolio, and Contact
-- Built with Next.js and Tailwind CSS
+A modern, responsive portfolio website showcasing George Lock's expertise in social media management, content creation, and digital marketing. This professionally designed site highlights George's skills, experience, and successful projects in the social media and advertising space.
+
+## Portfolio Features
+
+- **Modern Professional Design**: Sleek UI with animated elements, gradient styling and glassmorphism effects
+- **Multi-Page Experience**: Dedicated pages for Home, About, Experience, and Contact sections
+- **Interactive Elements**: Animated transitions, hover effects, and responsive design
+- **Mobile-First Approach**: Fully responsive on all device sizes
+- **Professional Branding**: Consistent color scheme and styling throughout
 
 ## Technologies Used
 
