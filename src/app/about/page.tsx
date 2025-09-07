@@ -30,7 +30,7 @@ export default function AboutPage() {
             <div className="glass-card rounded-2xl p-6 mb-8">
               <div className="aspect-[3/4] mb-6 overflow-hidden rounded-xl relative">
                 <img 
-                  src="/images/george-graduation.jpg" 
+                  src="/images/george-graduation.png" 
                   alt="George Lock"
                   className="w-full h-full object-cover" 
                 />

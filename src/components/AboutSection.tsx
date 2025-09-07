@@ -34,7 +34,7 @@ const AboutSection = () => {
                 {/* Image with professional styling */}
                 <div className="relative rounded-lg overflow-hidden border border-white/20">
                   <img 
-                    src="/images/george-graduation.jpg" 
+                    src="/images/george-graduation.png" 
                     alt="George Lock" 
                     className="w-full h-auto object-cover aspect-[3/4]"
                   />
