@@ -94,8 +94,8 @@
       margin-bottom: 2rem;
     }
     .profile-circle {
-      width: 250px;
-      height: 250px;
+      width: 270px;
+      height: 270px;
       border-radius: 50%;
       margin: 0 auto;
       overflow: hidden;
@@ -106,9 +106,9 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      /* Show more headroom; keep face centered */
-      object-position: 50% 28%;
-      border: 4px solid rgba(16, 185, 129, 0.2);
+      /* Center face: nudge slightly right and up; remove inner border to avoid visual cutoff */
+      object-position: 44% 26%;
+      /* border removed */
       box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
     }
     .cta {
