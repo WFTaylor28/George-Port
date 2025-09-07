@@ -6,16 +6,68 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 15, 23, 42;
   --background-end-rgb: 88, 28, 135;
+  --accent-purple: 139, 92, 246;
+  --accent-pink: 236, 72, 153;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-    to bottom right,
+    -45deg,
     rgb(var(--background-start-rgb)),
     rgb(var(--background-end-rgb)),
-    rgb(var(--background-start-rgb))
+    rgb(29, 35, 65),
+    rgb(70, 20, 100)
   );
+  background-size: 400% 400%;
+  animation: gradient-animation 15s ease infinite;
   min-height: 100vh;
 }
 
@@ -40,4 +92,61 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(139, 92, 246, 0.8);
+}
+
+/* Custom utility classes */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+/* Glass card effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+.button-primary {
+  @apply px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-medium 
+  transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30 hover:from-purple-700 hover:to-pink-700;
+}
+
+.button-outline {
+  @apply px-6 py-3 bg-transparent border border-purple-500 text-purple-300 rounded-full font-medium 
+  transition-all duration-300 hover:bg-purple-500/10 hover:shadow-lg hover:shadow-purple-500/20;
+}
+
+/* Underline animation for navigation */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(to right, rgb(var(--accent-purple)), rgb(var(--accent-pink)));
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active::after {
+  width: 100%;
 }
