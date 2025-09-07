@@ -93,11 +93,23 @@
       color: #10b981; /* Medium green for subheading */
       margin-bottom: 2rem;
     }
-    .profile-img {
+    .profile-circle {
       width: 250px;
       height: 250px;
       border-radius: 50%;
-      object-fit: cover;
+      background: linear-gradient(135deg, #10b981, #059669);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 4px solid rgba(16, 185, 129, 0.3);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .profile-initials {
+      font-size: 72px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
       border: 4px solid rgba(16, 185, 129, 0.2);
       box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
     }
@@ -189,6 +201,22 @@
       color: #059669;
       margin-bottom: 0.5rem;
     }
+    .university-logo {
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(135deg, #7a0026, #9e1b32);
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .university-initial {
+      font-size: 48px;
+      font-weight: bold;
+      color: white;
+    }
     .experience-content {
       max-width: 900px;
       margin: 0 auto;
@@ -215,6 +243,28 @@
       margin-bottom: 1rem;
       border-bottom: 1px solid rgba(16, 185, 129, 0.2);
       padding-bottom: 0.5rem;
+    }
+    .account-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem auto;
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    .instagram {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    }
+    .tiktok {
+      background: linear-gradient(45deg, #000000, #25F4EE, #FE2C55, #000000);
+    }
+    .facebook {
+      background: #1877F2;
     }
     .contact-content {
       max-width: 700px;
@@ -274,12 +324,22 @@
         flex-direction: column;
         gap: 1rem;
       }
-      .profile-img {
+      .profile-circle {
         width: 200px;
         height: 200px;
       }
+      .profile-initials {
+        font-size: 60px;
+      }
       h1 {
         font-size: 2.5rem;
+      }
+      .university-logo {
+        width: 80px;
+        height: 80px;
+      }
+      .university-initial {
+        font-size: 36px;
       }
     }
   </style>
@@ -346,8 +406,8 @@
   
   <div id="home" class="container">
     <header>
-      <div style="width: 250px; height: 250px; margin: 0 auto; overflow: hidden; border-radius: 50%; border: 4px solid rgba(16, 185, 129, 0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-        <img src="images/placeholder.svg" alt="George Lock" style="width: 100%; height: 100%; object-fit: cover;">
+      <div class="profile-circle">
+        <div class="profile-initials">GL</div>
       </div>
       <h1 style="color: #333;">George Lock</h1>
       <h2>Social Media Expert & Digital Strategist</h2>
@@ -390,7 +450,9 @@
       <div class="education">
         <h3>Education</h3>
         <div class="education-item">
-          <img src="images/diploma-placeholder.svg" alt="Temple University Diploma" style="max-width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+          <div class="university-logo">
+            <div class="university-initial">T</div>
+          </div>
           <h4>Temple University</h4>
           <p>Bachelor's Degree in Advertising</p>
           <p>2019 - 2023</p>
@@ -405,16 +467,25 @@
       <h3>Social Media Accounts Managed</h3>
       <div class="accounts-grid">
         <div class="account-card">
+          <div class="account-icon instagram">
+            <i>In</i>
+          </div>
           <h4>Instagram Business Page</h4>
           <p>Grew followers from 500 to 50,000 in 8 months</p>
           <p>Engagement rate: 8.5%</p>
         </div>
         <div class="account-card">
+          <div class="account-icon tiktok">
+            <i>Tt</i>
+          </div>
           <h4>TikTok Brand Account</h4>
           <p>Achieved 2M+ combined views</p>
           <p>10+ viral videos with 100K+ views each</p>
         </div>
         <div class="account-card">
+          <div class="account-icon facebook">
+            <i>Fb</i>
+          </div>
           <h4>Facebook Business Page</h4>
           <p>Managed ad campaigns with 300% ROI</p>
           <p>Built community of 25,000+ engaged users</p>
