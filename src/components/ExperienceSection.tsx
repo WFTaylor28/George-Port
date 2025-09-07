@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { education } from '../data/education';
 import { experience } from '../data/experience';

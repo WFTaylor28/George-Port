@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { experience } from '../../data/experience';
 import { accounts } from '../../data/accounts';

@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import { ArrowRight, Instagram, Briefcase, Award, ChevronDown } from 'lucide-react';
@@ -87,7 +89,7 @@ const HeroSection = () => {
                 <div className="absolute -inset-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-3xl blur-xl opacity-60 animate-pulse-slow"></div>
                 <div className="relative rounded-3xl overflow-hidden border-2 border-white/20 shadow-2xl w-80 h-96 md:w-[440px] md:h-[550px]">
                   <img
-                    src="/images/george-graduation.jpg"
+                    src={`${process.env.NODE_ENV === 'production' ? '/George-Port' : ''}/images/george-graduation.jpg`}
                     alt="George Lock - Social Media Expert"
                     className="w-full h-full object-cover"
                   />
